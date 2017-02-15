@@ -1,6 +1,6 @@
 # ngAsyncImg
 
-An angular.js directive for **asynchronous, animation-enabled** images.
+An angular.js directive for **asynchronous, $animate-aware** image tags.
 
 ## Installation
 

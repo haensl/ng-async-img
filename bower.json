@@ -1,0 +1,32 @@
+{
+  "name": "ng-async-img",
+  "description": "An angular.js directive for asynchronous, $animate-aware image tags.",
+  "main": "lib/ng-async-img.min.js",
+  "authors": [
+    "HP Dietz <h.p.dietz@gmail.com>"
+  ],
+  "license": "GPL-3.0",
+  "keywords": [
+    "image",
+    "asynchronous",
+    "$animate",
+    "ng-enter",
+    "directive",
+    "angular.js"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "karma.conf.js",
+    "Gulpfile.js"
+  ],
+  "dependencies": {
+    "angular": "^1.6.2",
+    "angular-animate": "^1.6.2"
+  },
+  "devDependencies": {
+    "angular-mocks": "^1.6.2"
+  }
+}
