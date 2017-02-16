@@ -1,3 +1,6 @@
+### 1.1.2
+* Add TravisCI badge to readme
+
 ### 1.1.1
 * Add version badges to readme
 
