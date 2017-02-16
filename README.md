@@ -4,6 +4,9 @@ An angular.js directive for **asynchronous, $animate-aware** image tags.
 
 [![NPM](https://nodei.co/npm/ng-async-img.png?downloads=true)](https://nodei.co/npm/ng-async-img/)
 
+[![npm version](https://badge.fury.io/js/ng-async-img.svg)](http://badge.fury.io/js/ng-async-img)
+[![Bower version](https://badge.fury.io/bo/ng-async-img.svg)](https://badge.fury.io/bo/ng-async-img)
+
 ## Installation
 
 1. Install the `ngAsyncImg` package
