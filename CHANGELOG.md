@@ -1,3 +1,6 @@
+### 1.1.0
+* Add TravisCI
+
 ### 1.0.4
 * Add npm info to readme
 
