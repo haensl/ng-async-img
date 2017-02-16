@@ -1,3 +1,6 @@
+### 1.0.4
+* Add npm info to readme
+
 ### 1.0.3
 * Update ignored files
 
