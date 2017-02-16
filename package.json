@@ -1,6 +1,6 @@
 {
   "name": "ng-async-img",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An angular.js directive for asynchronous, $animate-aware image tags.",
   "main": "lib/ng-async-img.min.js",
   "scripts": {

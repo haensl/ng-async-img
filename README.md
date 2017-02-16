@@ -48,9 +48,9 @@ The image will then be loaded asynchronously and the `<async-img>`-tag replaced 
 
 In your markup:
 ```html
-<!-- ... --->
-<async-img src="/path/to/your/img.png"></async>
-<!-- ... --->
+<!-- ... -->
+<async-img src="/path/to/your/img.png" class="some-class" an-attribute="1"></async>
+<!-- ... -->
 ```
 
 In your stylesheets:
@@ -73,6 +73,11 @@ In your stylesheets:
 .async-img.ng-enter-prepare {
   opacity: 0;
 }
+```
+
+Markup after the `<async-img>` has finished loading:
+```html
+<img src="/path/to/your/img.png" class="some-class async-img" an-attribute="1" />
 ```
 
 ## [Changelog](CHANGELOG.md)
