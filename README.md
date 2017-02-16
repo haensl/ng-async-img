@@ -2,7 +2,7 @@
 
 An angular.js directive for **asynchronous, $animate-aware** image tags.
 
-[![NPM](https://nodei.co/npm/ng-animated-scroll.png?downloads=true)](https://nodei.co/npm/ng-async-img/)
+[![NPM](https://nodei.co/npm/ng-async-img.png?downloads=true)](https://nodei.co/npm/ng-async-img/)
 
 ## Installation
 
