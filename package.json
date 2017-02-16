@@ -1,6 +1,6 @@
 {
   "name": "ng-async-img",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "An angular.js directive for asynchronous, $animate-aware image tags.",
   "main": "lib/ng-async-img.min.js",
   "scripts": {
@@ -9,6 +9,10 @@
     "build": "gulp build",
     "post-install": "bower install",
     "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haensl/ng-async-img.git"
   },
   "keywords": [
     "image",

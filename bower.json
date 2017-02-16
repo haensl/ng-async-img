@@ -1,6 +1,7 @@
 {
   "name": "ng-async-img",
   "description": "An angular.js directive for asynchronous, $animate-aware image tags.",
+  "homepage": "https://github.com/haensl/ng-async-img",
   "main": "lib/ng-async-img.min.js",
   "authors": [
     "HP Dietz <h.p.dietz@gmail.com>"
@@ -20,7 +21,7 @@
     "node_modules",
     "bower_components",
     "karma.conf.js",
-    "Gulpfile.js"
+    "gulpfile.js"
   ],
   "dependencies": {
     "angular": "^1.6.2",
