@@ -2,3 +2,5 @@
 **/*.spec.js
 karma.conf.js
 gulpfile.js
+src/test.png
+bower_components/

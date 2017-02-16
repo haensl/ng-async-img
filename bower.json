@@ -21,7 +21,9 @@
     "node_modules",
     "bower_components",
     "karma.conf.js",
-    "gulpfile.js"
+    "gulpfile.js",
+    "src/test.png",
+    "**/*.spec.js"
   ],
   "dependencies": {
     "angular": "^1.6.2",

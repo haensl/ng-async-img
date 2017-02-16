@@ -16,7 +16,7 @@
       const patterns = {
         js: 'src/**/!(*.spec).js',
         spec: 'src/**/*.spec.js',
-        img: '*.png'
+        img: 'src/**/*.png'
       };
 
       Object.keys(patterns).forEach((type) => {

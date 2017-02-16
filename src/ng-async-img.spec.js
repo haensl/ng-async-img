@@ -15,7 +15,7 @@
       $animate.enabled(true);
       $document = angular.element(document.body);
       compileDirective = function() {
-        var e = angular.element('<async-img src="base/test.png" class="test" an-attribute="1"></async-img>');
+        var e = angular.element('<async-img src="base/src/test.png" class="test" an-attribute="1"></async-img>');
         $document.append(e);
         $compile(e)($rootScope.$new());
         $rootScope.$digest();

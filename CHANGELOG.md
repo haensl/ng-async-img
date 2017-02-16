@@ -1,3 +1,6 @@
+### 1.0.3
+* Update ignored files
+
 ### 1.0.2
 * Update package configs
 
