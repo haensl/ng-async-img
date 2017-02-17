@@ -1,8 +1,8 @@
 {
   "name": "ng-async-img",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "An angular.js directive for asynchronous, $animate-aware image tags.",
-  "main": "lib/ng-async-img.min.js",
+  "main": "src/ng-async-img.js",
   "scripts": {
     "test": "gulp test",
     "tdd": "gulp tdd",
@@ -25,7 +25,15 @@
     "directive",
     "angular.js"
   ],
-  "author": "HP Dietz <h.p.dietz@gmail.com>",
+  "author": {
+    "name": "Hans-Peter Dietz",
+    "email": "h.p.dietz@gmail.com",
+    "twitter": "@h_p_d"
+  },
+  "bugs": {
+    "url": "https://github.com/haensl/ng-async-img/issues"
+  },
+  "homepage": "https://github.com/haensl/ng-async-img#readme",
   "license": "GPL-3.0",
   "devDependencies": {
     "del": "^2.2.2",
@@ -40,7 +48,6 @@
     "jasmine-core": "^2.5.2",
     "karma": "^1.4.1",
     "karma-jasmine": "^1.1.0",
-    "karma-ng-html2js-preprocessor": "^1.0.0",
     "karma-phantomjs-launcher": "^1.0.2",
     "karma-spec-reporter": "0.0.26",
     "phantomjs-prebuilt": "^2.1.14",

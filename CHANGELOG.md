@@ -1,3 +1,6 @@
+### 1.1.3
+* Point package main property to non-minified version
+
 ### 1.1.2
 * Add TravisCI badge to readme
 

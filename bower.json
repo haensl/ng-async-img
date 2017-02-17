@@ -2,7 +2,7 @@
   "name": "ng-async-img",
   "description": "An angular.js directive for asynchronous, $animate-aware image tags.",
   "homepage": "https://github.com/haensl/ng-async-img",
-  "main": "lib/ng-async-img.min.js",
+  "main": "src/ng-async-img.js",
   "authors": [
     "HP Dietz <h.p.dietz@gmail.com>"
   ],
@@ -15,7 +15,6 @@
     "directive",
     "angular.js"
   ],
-  "homepage": "",
   "ignore": [
     "**/.*",
     "node_modules",
