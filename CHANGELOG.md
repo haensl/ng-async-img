@@ -1,3 +1,6 @@
+### 1.2.0
+* Add `onLoad()` and `onEnter()` callbacks
+
 ### 1.1.3
 * Point package main property to non-minified version
 

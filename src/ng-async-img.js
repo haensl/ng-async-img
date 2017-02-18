@@ -5,6 +5,10 @@
       function($animate) {
         return {
           restrict: 'E',
+          scope: {
+            onLoad: '&',
+            onEnter: '&'
+          },
           link: function(scope, element, attributes) {
             element.addClass('async-img');
             if ('src' in attributes) {
@@ -16,8 +20,17 @@
                 img.setAttribute(node.nodeName, node.nodeValue);
               });
               img.onload = function() {
+                if (typeof scope.onLoad === 'function') {
+                  scope.onLoad();
+                }
+
                 scope.$apply(function() {
-                  $animate.enter(img, element.parent(), element[0].previousElementSibling);
+                  $animate.enter(img, element.parent(), element[0].previousElementSibling)
+                    .then(function() {
+                      if (typeof scope.onEnter === 'function') {
+                        scope.onEnter();
+                      }
+                    });
                   element.remove();
                 });
               };

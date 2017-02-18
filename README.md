@@ -46,16 +46,22 @@ angular.module('myApp', ['ngAsyncImg']);
 <async-img src="/path/to/your/img.png"></async-img>
 ```
 
-The image will then be loaded asynchronously and the `<async-img>`-tag replaced by a regular `<img>`-tag when the image has loaded. This is done via [`$animate.enter()`](https://docs.angularjs.org/api/ng/service/$animate#enter) which enables CSS-animation via `.ng-enter`.
+## Features
 
-**The `<async-img>` will retain all attributes of the initial `<async-img>` and have the `.async-img` class.**
+* The image will then be loaded asynchronously and the `<async-img>`-tag replaced by a regular `<img>`-tag when the image has loaded. This is done via [`$animate.enter()`](https://docs.angularjs.org/api/ng/service/$animate#enter) which enables CSS-animation via `.ng-enter`.
+
+* As of *version 1.2.0* `<async-img>` can be passed `onLoad()` and `onEnter()` callback functions.
+
+* The `<async-img>` will retain all attributes of the initial `<async-img>` and have the `.async-img` class.
 
 ### Example: CSS animation to fade in async images
 
 In your markup:
 ```html
 <!-- ... -->
-<async-img src="/path/to/your/img.png" class="some-class" an-attribute="1"></async>
+<async-img src="/path/to/your/img.png"
+  class="some-class"
+  an-attribute="1"></async>
 <!-- ... -->
 ```
 
@@ -83,9 +89,31 @@ In your stylesheets:
 
 Markup after the `<async-img>` has finished loading:
 ```html
-<img src="/path/to/your/img.png" class="some-class async-img" an-attribute="1" />
+<img src="/path/to/your/img.png"
+  class="some-class async-img"
+  an-attribute="1" />
 ```
 
-## [Changelog](CHANGELOG.md)
+### Example: `onLoad()` and `onEnter()` callbacks *(requires version >= 1.2.0)*
+In your controller:
+```javascript
+//...
+scope.onAsyncImgLoad = function() {
+  // code
+};
+
+scope.onAsyncImgEnter = function() {
+  // code
+};
+```
+
+In your markup:
+```html
+<async-img src="/path/to/your/img.png"
+  on-load="onAsyncImgLoad()"
+  on-enter="onAsyncImgEnter()"></async-img>
+```
+
+## [Changelog](CHANGELO.md)
 
 ## [License](LICENSE)
