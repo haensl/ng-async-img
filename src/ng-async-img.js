@@ -22,16 +22,13 @@
                   img.setAttribute(node.nodeName, node.nodeValue);
                 });
                 var htmlElement = element[0];
-                Object.keys(htmlElement).forEach(function(property) {
-                  if (/^on.+$/.test(property)
-                    && typeof htmlElement['on' + property] === 'function') {
-                    img['on' + property] = htmlElement['on' + property];
+                var isEvent = /^on.+$/i;
+                for (var property in htmlElement) {
+                  if (isEvent.test(property)
+                    && typeof htmlElement[property] === 'function') {
+                    img[property] = htmlElement[property].bind(img);
                   }
-                  /**
-                  if (typeof htmlElement['on' + event.toLowerCase()] === 'function') {
-                    img.addEventListener(event, htmlElement['on' + event.toLowerCase()].bind(img));
-                  }*/
-                });
+                }
                 img.onload = function() {
                   if (typeof scope.onLoad === 'function') {
                     scope.onLoad();

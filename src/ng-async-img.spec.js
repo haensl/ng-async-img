@@ -23,6 +23,7 @@
         }
 
         $document.append(e);
+        e[0].onclick = angular.noop;
         if (scope) {
           $compile(e)(scope);
         } else {
