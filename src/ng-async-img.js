@@ -22,10 +22,15 @@
                   img.setAttribute(node.nodeName, node.nodeValue);
                 });
                 var htmlElement = element[0];
-                Object.keys(Event.prototype).forEach(function(event) {
+                Object.keys(htmlElement).forEach(function(property) {
+                  if (/^on.+$/.test(property)
+                    && typeof htmlElement['on' + property] === 'function') {
+                    img['on' + property] = htmlElement['on' + property];
+                  }
+                  /**
                   if (typeof htmlElement['on' + event.toLowerCase()] === 'function') {
                     img.addEventListener(event, htmlElement['on' + event.toLowerCase()].bind(img));
-                  }
+                  }*/
                 });
                 img.onload = function() {
                   if (typeof scope.onLoad === 'function') {
