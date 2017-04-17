@@ -19,6 +19,12 @@
               Array.prototype.forEach.call(element[0].attributes, function(node) {
                 img.setAttribute(node.nodeName, node.nodeValue);
               });
+              var htmlElement = element[0];
+              Object.keys(Event.prototype).forEach(function(event) {
+                if (typeof htmlElement['on' + event.toLowerCase()] === 'function') {
+                  img.addEventListener(event, htmlElement['on' + event.toLowerCase()].bind(img));
+                }
+              });
               img.onload = function() {
                 if (typeof scope.onLoad === 'function') {
                   scope.onLoad();
