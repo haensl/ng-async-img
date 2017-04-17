@@ -1,5 +1,6 @@
 ### 1.3.0
 * Migrate events
+* Move link execution to queue
 
 ### 1.2.0
 * Add `onLoad()` and `onEnter()` callbacks
