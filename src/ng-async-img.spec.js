@@ -8,7 +8,7 @@
     var compileDirective;
 
     beforeEach(angular.mock.module('ngAnimate', 'ngAnimateMock', 'ngAsyncImg'));
-    beforeEach(angular.mock.inject(function(_$rootScope_, _$animate_, _$q_, $compile) {
+    beforeEach(angular.mock.inject(function(_$rootScope_, _$animate_, _$q_, $compile, $timeout) {
       $rootScope = _$rootScope_;
       $animate = _$animate_;
       $q = _$q_;
@@ -30,6 +30,7 @@
         }
 
         $rootScope.$digest();
+        $timeout.flush();
         return e;
       };
     }));
