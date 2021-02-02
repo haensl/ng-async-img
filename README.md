@@ -1,6 +1,10 @@
-# ngAsyncImg
+# DEPRECATED: ngAsyncImg
 
 An angular.js directive for **asynchronous, $animate-aware** image tags.
+
+## Deprecation notice
+
+Due to the [end of life of Angular.js](https://blog.angular.io/stable-angularjs-and-long-term-support-7e077635ee9c), this module is deprecated and no longer maintained.
 
 [![NPM](https://nodei.co/npm/ng-async-img.png?downloads=true)](https://nodei.co/npm/ng-async-img/)
 

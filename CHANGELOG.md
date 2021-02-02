@@ -1,3 +1,6 @@
+###
+* [#4: Deprecate.](https://github.com/haensl/ng-async-img/issues/4)
+
 ### 1.3.0
 * Migrate events
 * Move link execution to queue
