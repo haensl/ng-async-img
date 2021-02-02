@@ -7,7 +7,7 @@
     "test": "gulp test",
     "tdd": "gulp tdd",
     "build": "gulp build",
-    "postinstall": "bower install",
+    "postinstall": "echo 'DEPRECATION WARNING: ng-async-img is no longer maintained. Use at your own risk.'",
     "lint": "eslint ."
   },
   "engines": {
